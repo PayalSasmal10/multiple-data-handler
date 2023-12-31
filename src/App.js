@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import data from "./data.json";
 import {useState} from "react";
@@ -13,15 +12,14 @@ function App() {
   return (
     <form className="App" action='#'>
       <label>Choose the skills :</label>
+      <select>
         {languages.map((item, index)=> {
           return(
-            <div key={item.language}>
-              <input type='checkbox' onClick={()=>languageHandler(index)}/>
-              <label>{item.language}</label>
-            </div>
+              <option>{item.language}</option>
           )
         }
         )}
+        </select>
     </form>
   );
 }
