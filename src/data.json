@@ -1,0 +1,54 @@
+[
+    {
+        "language": "Java",
+        "checked": false
+    },
+    {
+        "language": "JavaScript",
+        "checked": false
+    },
+    {
+        "language": "HTML",
+        "checked": false
+    },
+    {
+        "language": "CSS",
+        "checked": false
+    },
+    {
+        "language": "Groovy",
+        "checked": false
+    },
+    {
+        "language": "ReactJS",
+        "checked": false
+    },
+    {
+        "language": "Jest",
+        "checked": false
+    },
+    {
+        "language": "Redux",
+        "checked": false
+    },
+    {
+        "language": "Context-API",
+        "checked": false
+    },
+    {
+        "language": "Rust",
+        "checked": false
+    },
+    {
+        "language": "Python",
+        "checked": false
+    },
+    {
+        "language": "R",
+        "checked": false
+    },
+    {
+        "language": "Go",
+        "checked": false
+    }
+]
