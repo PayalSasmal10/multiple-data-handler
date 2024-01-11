@@ -4,6 +4,7 @@ import {useState} from "react";
 
 function App() {
   const [languages, setLanguages] = useState(data);
+  const [input, setInput] = useState('');
   const [showSelectedLang, setShowSelected] = useState([]);
 
   const languageHandler = (index) =>{
@@ -13,18 +14,8 @@ function App() {
 
   return (
     <form className="App" action='#'>
-      <label>Choose the skills :</label>
-      <select>
-        {languages.map((item, index)=> {
-          return(
-            <div key={item.language}>
-              <option>{item.language}</option>
-            </div>
-          )
-        }
-        )}
-        </select>
-        <div>{showSelectedLang}</div>
+      <input type='text' onChange={(e) => setInput(e.target.value)}/>
+      <div>{showSelectedLang}</div>
     </form>
   );
 }
