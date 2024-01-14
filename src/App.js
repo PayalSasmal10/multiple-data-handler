@@ -7,19 +7,19 @@ function App() {
   const [input, setInput] = useState('');
   const [showSelectedLang, setShowSelected] = useState([]);
 
-  const languageHandler = () =>{
-      
-  };
 
   const onChangeHandler = (e) => {
     setInput(e.target.value);
-    console.log(input)
+    console.log(input);
+    const showFilteredData = languages.language.map((language) => language.includes(input));
+    setLanguages(showFilteredData);
+    console.log(languages);
   };
 
   return (
     <form className="App" action='#'>
       <input type='text' onChange={onChangeHandler}/>
-      <div>{showSelectedLang}</div>
+      <div>{languages.language}</div>
     </form>
   );
 }
